@@ -1471,3 +1471,9 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+@media only screen and (max-width: 600px) {
+  .contactForm{
+    width: 100% !important;
+    }
+}
