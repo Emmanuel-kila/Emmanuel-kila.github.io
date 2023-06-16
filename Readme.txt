@@ -1,6 +1,3 @@
-I downloaded this template from:
+This is my portfolio website created from Bootstrap template. Still learning.
 
-Template Name: DevFolio
-Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+check out the live website on: https://emmanuel-kila.github.io/
