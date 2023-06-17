@@ -184,7 +184,7 @@ table tbody{
     font-size: 14px !important;
     font-weight: 500;
     color: black;
-    width: 82px !important;
+    width: 35% !important;
 }
 
 .title{
@@ -224,6 +224,14 @@ table tbody{
     font-family: sans-serif;
     font-size: 22px;
     display: none;
+}
+
+.inputPlace{
+    padding: 2px 2px 2px 10px !important;
+}
+
+.bhscene{
+    width: 64.7% !important;
 }
 
 .sidebarSection{
