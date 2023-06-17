@@ -17,12 +17,12 @@ Date Created: 06/06/2023 -->
     <!--main section-->
     <div class="col-10 mainSection">
         <!--header section-->
-        <form>
+        <form name="First_Client_Form">
             <div class="row">
                 <div class="form-group row col-6">
                     <label for="clientId" class="col-sm-3 col-form-label sectionOne requiredField">Client ID</label>
                     <div class="input-group col-sm-9" id="clientIdSearch">
-                        <input type="text" id="clientId" class="form-control" placeholder="Client ID">
+                        <input type="text" id="clientId" class="form-control" placeholder="Client ID" required>
                         <button class="input-group-text" id="basic-addon2">Search</button>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ Date Created: 06/06/2023 -->
                     <label for="appId" class="col-sm-4 col-form-label sectionOne normalField">Application ID</label>
 
                     <div class="input-group col-sm-8" id="applicationIdSearch">
-                        <input type="text" id="appId" class="form-control" placeholder="Application ID">
+                        <input type="text" id="appId" class="form-control" placeholder="Application ID" required>
                         <button class="input-group-text" id="basic-addon2">Search</button>
                     </div>
                 </div>
@@ -341,13 +341,13 @@ Date Created: 06/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="phoneWork" class="col-sm-4 col-form-label normalFieldTwo">Phone (Work)</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="phoneWork" placeholder="Phone (Work)">
+                                <input type="tel" class="form-control" id="phoneWork" placeholder="Phone (Work)">
                             </div> 
                         </div>
                         <div class="row sectionOne col-6">
                             <label for="mobile" class="col-sm-4 col-form-label requiredFieldTwo">Mobile</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="mobile" placeholder="Mobile">
+                                <input type="tel" class="form-control" id="mobile" placeholder="Mobile">
                             </div> 
                         </div>
                     </div>
@@ -361,7 +361,7 @@ Date Created: 06/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="emailId" class="col-sm-4 col-form-label normalFieldTwo">Email ID</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="emailId" placeholder="Email ID">
+                                <input type="email" class="form-control" id="emailId" placeholder="Email ID">
                             </div> 
                         </div>
                     </div>
@@ -526,6 +526,7 @@ Date Created: 06/06/2023 -->
  </div>
 
 <script src="myScript.js"></script>  
+<script src="validation.js"></script> <!--This is a javascript validation form still under development -->  
 </body>
 
 
