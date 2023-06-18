@@ -30,7 +30,7 @@ Date Created: 16/06/2023 -->
                     <div class="row sectionOne">
                         <label  class="col-sm-5 col-form-label requiredField">Client Type</label>
                         <div class="col-sm-7">
-                            <select class="clientType custom-select" >
+                            <select class="clientType custom-select" required>
                                 <option>Enterprises</option>
                                 <option>Demo 2</option>
                             </select>
@@ -39,7 +39,7 @@ Date Created: 16/06/2023 -->
                     <div class="row sectionOne">
                         <label  class="col-sm-5 col-form-label requiredField">Segment Type</label>
                         <div class="col-sm-7">
-                            <select class="clientType">
+                            <select class="clientType" required>
                                 <option>Corporate</option>
                                 <option>Demo 2</option>
                             </select>
@@ -48,7 +48,7 @@ Date Created: 16/06/2023 -->
                     <div class="row sectionOne">
                         <label  class="col-sm-5 col-form-label requiredField">Sub-Segment Type</label>
                         <div class="col-sm-7">
-                            <select class="clientType">
+                            <select class="clientType" required>
                                 <option>Public Limited Company</option>
                                 <option>Demo 2</option>
                             </select>
@@ -59,7 +59,7 @@ Date Created: 16/06/2023 -->
                     <label for="appId" class="col-sm-4 col-form-label sectionOne normalField">Application ID</label>
 
                     <div class="input-group col-sm-8" id="applicationIdSearch">
-                        <input type="text" id="appId" class="form-control" placeholder="Application ID" required>
+                        <input type="text" id="appId" class="form-control" placeholder="Application ID">
                         <button class="input-group-text" id="basic-addon2">Search</button>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ Date Created: 16/06/2023 -->
                 <div class="form-group row col-12 sectionOne">
                     <label for="clientName" class="col-sm-2 col-form-label sectionOne requiredField">Client Name</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="clientName" placeholder="Client Name">
+                      <input type="text" class="form-control" id="clientName" placeholder="Client Name" required>
                     </div>   
                 </div>
                 <div class="form-group row col-12 sectionOne">
@@ -102,13 +102,13 @@ Date Created: 16/06/2023 -->
                     <div class="form-group row col-12 sectionOne">
                         <label for="companyName" class="col-sm-2 col-form-label requiredFieldTwo">Company Name</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="companyName" placeholder="Company Name">
+                          <input type="text" class="form-control" id="companyName" placeholder="Company Name" required>
                         </div>   
                     </div>
                     <div class="row sectionOne col-12">
                         <label  class="col-sm-2 col-form-label requiredFieldTwo">Line of Business</label>
                         <div class="col-sm-10">
-                            <select class="clientType custom-select lineOfBusiness" >
+                            <select class="clientType custom-select lineOfBusiness" required >
                                 <option>Proprietary</option>
                                 <option>Demo 2</option>
                             </select>
@@ -124,14 +124,14 @@ Date Created: 16/06/2023 -->
                     <div class="form-group row col-12 sectionOne">
                         <label for="NatureBusinessID" class="col-sm-2 col-form-label requiredFieldTwo">Nature of Business</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="NatureBusinessID" placeholder="Nature of Business">
+                          <input type="text" class="form-control" id="NatureBusinessID" placeholder="Nature of Business" required>
                         </div>   
                     </div>
 
                     <div class="row sectionOne col-12">
                         <label for="identificationType" class="col-sm-2 col-form-label requiredFieldTwo">Identification Type</label>
                         <div class="col-sm-10">
-                            <select class="identificationType custom-select" >
+                            <select class="identificationType custom-select" required>
                                 <option>--select--</option>
                                 <option>Demo 2</option>
                             </select>
@@ -141,7 +141,7 @@ Date Created: 16/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="registrationNo" class="col-sm-4 col-form-label requiredFieldTwo">Registration No</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="registrationNo" placeholder="Registration No">
+                                <input type="text" class="form-control" id="registrationNo" placeholder="Registration No" required>
                             </div> 
                         </div>
                         <div class="row sectionOne col-6">
@@ -205,7 +205,7 @@ Date Created: 16/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="relationshipManager" class="col-sm-4 col-form-label requiredFieldTwo">RelationShip Manager</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100" >
+                                <select class="custom-select w-100" required>
                                     <option>--select--</option>
                                     <option>Demo 2</option>
                                 </select>
@@ -214,7 +214,7 @@ Date Created: 16/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="openedOn" class="col-sm-4 col-form-label requiredFieldTwo">Opened On</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100" >
+                                <select class="custom-select w-100" required>
                                     <option>--select--</option>
                                     <option>Demo 2</option>
                                 </select>
@@ -239,7 +239,7 @@ Date Created: 16/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="residentialAddress" class="col-sm-4 col-form-label requiredFieldTwo">Residential Address</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="residentialAddress" placeholder="Residential Address">
+                                <input type="text" class="form-control" id="residentialAddress" placeholder="Residential Address" required>
                             </div> 
                         </div>
                         <div class="row sectionOne col-6">
@@ -259,7 +259,7 @@ Date Created: 16/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="mailingAddress" class="col-sm-4 col-form-label requiredFieldTwo">Mailing Address</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="mailingAddress" placeholder="Business Address">
+                                <input type="text" class="form-control" id="mailingAddress" placeholder="Business Address" required>
                             </div> 
                         </div>
                     </div>
@@ -295,7 +295,7 @@ Date Created: 16/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="country" class="col-sm-4 col-form-label requiredFieldTwo">Country</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100">
+                                <select class="custom-select w-100" required>
                                     <option>Tanzania</option>
                                     <option>Demo 2</option>
                                 </select>
@@ -312,7 +312,7 @@ Date Created: 16/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="regionTwo" class="col-sm-4 col-form-label requiredFieldTwo">Region</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100" >
+                                <select class="custom-select w-100" required>
                                     <option>Arusha</option>
                                     <option>Demo 2</option>
                                 </select>
@@ -329,8 +329,8 @@ Date Created: 16/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="ward" class="col-sm-4 col-form-label requiredFieldTwo">Ward</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100" >
-                                    <option>Bomambuzi</option>
+                                <select class="custom-select w-100" required>
+                                    <option>BOMAMBUZI</option>
                                     <option>Demo 2</option>
                                 </select>
                             </div>
@@ -338,8 +338,8 @@ Date Created: 16/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="district" class="col-sm-4 col-form-label requiredFieldTwo">District</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100" >
-                                    <option>Hai</option>
+                                <select class="custom-select w-100" required>
+                                    <option>HAI</option>
                                     <option>Demo 2</option>
                                 </select>
                             </div>
@@ -355,7 +355,7 @@ Date Created: 16/06/2023 -->
                         <div class="row sectionOne col-6">
                             <label for="mobile" class="col-sm-4 col-form-label requiredFieldTwo">Mobile</label>
                             <div class="col-sm-8">
-                                <input type="tel" class="form-control" id="mobile" placeholder="Mobile">
+                                <input type="tel" class="form-control" id="mobile" placeholder="Mobile" required>
                             </div> 
                         </div>
                     </div>
