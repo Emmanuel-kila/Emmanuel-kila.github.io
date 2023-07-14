@@ -13,124 +13,248 @@
   <link href="assets/img/favicon2.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
   <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
- 
+  <!-- =======================================================
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+  <header id="header">
+    <div class="d-flex flex-column">
 
-      <h1 class="logo"><a href="index.html">Portfolio</a></h1>
-      
+      <div class="profile">
+        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Emmanuel Kiptoo</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#contact" class="phone-call"><i class='bx bxs-phone-call' ></i></a>
+          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+          <a href="mailto:emmanuelkiptoo047@gmail.com" class="google-plus"><i class='bx bxl-gmail'></i></a>
+          <a href="https://linkedin.com/in/emmanuel-kiptoo" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Emmanuel-kila" class="github" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+      </div>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li> -->
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero_bg_2.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">         
-          <h1 class="hero-title mb-4">I am Emmanuel Kiptoo</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Business Intelligence Developer, Freelancer, Data Analyst, Web Developer"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
-      </div>
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Emmanuel Kiptoo</h1>
+      <p>I'm a <span class="typed" data-typed-items=" Business Intelligence Developer, Data Analyst, Web Developer, Software Developer"></span></p>
     </div>
-  </div><!-- End Hero Section -->
+  </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
+    <section id="about" class="about">
       <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Welcome to my portfolio!</p>
+        </div>
+
         <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/hoodbw_150x150.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Emmanuel Kiptoo</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Business Intelligence developer / Data Analyst </span></p>
-                        <p><span class="title-s">Email: </span> <span>emmanuelkiptoo047@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>+254 703 683 812</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
-                    <span>SQL</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>QlikSense</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>HTML</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>CSS3</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>PHP</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JAVASCRIPT</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      I'm Emmanuel Kiptoo a Tech Enthusiast. I have experience in Data Analysis, Database Administration, Business Intelligence and Web Development.
-                      Below is a summary of my resume.
-                    </p>
-                    <p class="lead">
-                      <ul>
-                        <li>	Bachelor's Degree Business Information Technology Graduate (Second Class Honors Upper Division). </li>
+          <div class="col-lg-3" data-aos="fade-right">
+            <img src="assets/img/profile-img.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-9 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Business Intelligence &amp; Web Develoment.</h3>
+            <p class="fst-italic">
+              Below is my Bio Summary:
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1998</span></li> -->
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="#">emmanuel-kila.github.io</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254 703 683 812</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Nairobi, Kenya</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Service:</strong> <span>IT Consulting</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:emmanuelkiptoo047@gmail.com"> emmanuelkiptoo047@gmail.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              I'm Emmanuel Kiptoo a Tech Enthusiast. I have experience in Data Analysis, Business Intelligence, Database Administration and Web Development. 
+              Kindly check out the <a href="#resume">Resume</a> section for detailed proffesional experience and 
+              <a href="#services">Services</a> section to check out the services we can offer.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>Summary of the projects and satisfied clients</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> and more coming up</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> and many more ongoing</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Years of Experience</strong> </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Below is a summary of technical skills achievement</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">QlikSense <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            
+            <div class="progress">
+              <span class="skill">SQL <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+ 
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Below is a summary of my resume. To Download please click <a href=" https://docs.google.com/document/d/1bpPX-jvZRciNKhjiCUrOVGkBPUxjmjfD/export?format=pdf"><i class='bx bxs-download' ></i>here</a> </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Emmanuel Kiptoo</h4>
+              <p><em>Below is a summary of my resume.</em></p>
+              <ul>
+                <li>	Bachelor's Degree Business Information Technology Graduate (Second Class Honors Upper Division). </li>
                         <li>  Business/ Financial Reporting - Profit and Loss, Balance Sheet, Cost of Funds Reports.         </li>
                         <li>  Data Analysis/Visualization using Qlik Sense (Both On-Premise and SaaS).       </li>
                         <li>  Data Analytics /Database Administration - SQL.         </li>
+                        <li>  Oracle Cloud Infrastructure Foundation Associate Certified.</li>
                         <li>  Experience working with ;SAP Business One, Bankers Realm, Dynamics NAV, Kranium ERPs.       </li>
                         <li>  Basic API knowledge- REST API, ODBC, OLE DB.         </li>
                         <li>  Python Data Analysis - NumPy, Pandas, Seaborn, Matplotlib.       </li>
@@ -139,216 +263,287 @@
                         <li>  Agile Data and Information Management prep.(itmasters.edu.au).       </li>
                         <li>  Scrum Fundamentals for Scrum Master and Agile Projects.(Udemy).      </li>
                         <li>  Certified Information Security Manager Prep.(itmasters.edu.au).    </li>
-                       </ul>
-                    </p>
-                    
-                  </div>
-                </div>
-              </div>
+              </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-                Below are some of the services We offer:
-              </p>
-              <div class="line-mf"></div>
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Technology in Business Information technology</h4>
+              <h5>2016 - 2020</h5>
+              <p><em>The Technical University of Kenya - Nairobi,Kenya</em></p>
+              <p>Software Development | Networking | Information Security | Cloud Computing | Artificial Intelligence | Analytics | Database Management</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Business Intelligence Developer</h4>
+              <h5>2022 - 2023</h5>
+              <p><em>SYBYL LTD.- Nairobi, Kenya </em></p>
+              <ul>
+                <li>Deployed and Implemented Qlik Sense Business Intelligence and Reporting Tool on
+                  Client's Site.</li>
+                <li>Extracted, Transformed and Loaded data from multiple sources Including:
+                  SAP Business One, Dynamics Nav, Bankers Realm, Kranium ERPs.</li>
+                <li>Developed Reports and interactive Visualization as requested by Users.</li>
+                <li>Developed Financial Reports (Balance Sheets, Profit and Loss) , Sales, Production,
+                  Procurement Reports.</li>
+                <li>Deployed Robotic Process Automation Tools - UIPath, Automation Anywhere and Qlik
+                  Cloud Automation to Solve business needs.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Data Entry Specialist</h4>
+              <h5>2020 - 2022</h5>
+              <p><em>CloudFactory Kenya - (Remote)</em></p>
+              <ul>
+                <li>Image/Video Annotation- Landmarking and Bounding box annotation for Computer
+                  Vision (Artificial Intelligence/Machine Learning Algorithms).</li>
+                <li>Worked on Text and Audio annotation used for Natural Language Processing use cases.</li>
+                <li>Web Research, Web Scraping and Profiling for Data enrichment.</li>
+                <li>Data Entry- use of Google Workspace tools such as sheets, Drive and Forms.</li>
+              </ul>
             </div>
           </div>
         </div>
-         <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-globe"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                  We provide professional web development services to help businesses and individuals establish a strong online presence. Our team of skilled developers creates custom websites that are designed to meet our clients' specific needs and goals.
-                  Our web development services include but are not limited to: Website design and development, E-commerce development, Content management systems, Mobile-friendly design and Search engine optimization.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Data Analysis</h2>
-                <p class="s-description text-center">
-                  We provide expert data analysis services to help businesses and organizations make informed decisions based on the data.
-                  We utilize advanced techniques and tools to provide  actionable insights. We work closely with our clients to understand their unique needs and goals and tailor the analysis to meet those needs.
-                  Our data analysis services include but are not limited to: Data cleaning and preparation,Machine learning, Data visualization and Predictive modeling. Some of the Tools include:
-                  Qlik Sense, Tableau, Power BI and Python Libraries.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-phone-flip"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Responsive Design</h2>
-                <p class="s-description text-center">
-                  We provide professional responsive design services to help businesses and individuals create websites that are optimized for all devices, including desktop computers, laptops, tablets, and smartphones. Our team of skilled designers and developers creates custom designs that are tailored to meet our clients' specific needs and goals.
-                  Our responsive design services include but are not limited to:
-                  Custom design and development, Mobile-friendly design, Responsive frameworks, Cross-browser compatibility, User experience optimization.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
 
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/hero_bg_2.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-4 col-lg-4">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          
-        </div>
       </div>
-    </div><!-- End Counter Section -->
+    </section><!-- End Resume Section -->
 
    
 
-  <!-- ======= Contact Section ======= -->
-
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"  style="background-image: url(assets/img/overlay-bg.jpg)"> 
-      <div class="overlay-mf"></div>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
       <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Below are some of the services I offer. Kindly note that they are not limited to the listed.
+             For enquiries please feel free to reach out on the contact options available on the <a href="#contact">contact </a>  Section.</p>
+        </div>
+
         <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send  Message
-                      </h5>
-                    </div>
-                    <div class="col-md-6">
-                      
-                      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSMU0-O6DdMRSQ3wOe377jExAK-rjjvbDcd905b5fKrIMv2A/viewform?embedded=true" width="400" height="295" frameborder="0" marginheight="0" marginwidth="0" class="contactForm">Loading…</iframe>
-                      
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-					  
-					  Thank you for visiting ! 
-					  If you're interested in learning more about the services we offer, we would love to hear from you.
-					  <!-- <ul>
-						  <li>	Business Intelligence. </li>
-						  <li>  Data Analysis.         </li>
-						  <li>  Web Development.       </li>
-							
-					   </ul> -->
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> Nairobi, Kenya.</li>
-                        <li><span class="bi bi-phone"></span>+254 703 683 812</li>
-                        <li><span class="bi bi-envelope"></span> emmanuelkiptoo047@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-			
-                        <li><a href="https://www.linkedin.com/in/emmanuel-kiptoo/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-						            <li><a href="mailto:emmanuelkiptoo047@gmail.com?"><span class="ico-circle"><i class="bi bi-envelope"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Data and Analytics Consulting</a></h4>
+            <p class="description">We provide expert data analysis services to help businesses and organizations make informed decisions based on the data.
+                                   We utilize advanced techniques and tools to provide actionable insights.
+                                   We work closely with our clients to understand their unique needs and goals and tailor the analysis to meet those needs.
+                                   Our data analysis services include but are not limited to: Data cleaning and preparation,Machine learning, 
+                                   Data visualization and Predictive modeling. Some of the Tools include: Qlik Sense, Tableau, Power BI and Python Libraries.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-globe"></i></div>
+            <h4 class="title"><a href="">Web Design and Development</a></h4>
+            <p class="description">We provide professional web development services to help businesses and individuals establish a strong online presence. 
+                                   Our team of skilled developers creates custom websites that are designed to meet our clients' specific needs and goals. 
+                                   Our web development services include but are not limited to: 
+                                   Website design and development, E-commerce development, Content management systems, Mobile-friendly design and Search engine optimization.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-phone-flip"></i></div>
+            <h4 class="title"><a href="">Responsive Design</a></h4>
+            <p class="description">We provide professional responsive design services to help businesses and individuals create websites that are optimized for 
+                                  all devices, including desktop computers, laptops, tablets, and smartphones. Our team of skilled designers 
+                                  and developers creates custom designs that are tailored to meet our clients' specific needs and goals. 
+                                  Our responsive design services include but are not limited to: 
+                                  Custom design and development, Mobile-friendly design, Responsive frameworks, Cross-browser compatibility, User experience optimization.</p>
+          </div>
+          
+          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-phone-flip"></i></div>
+            <h4 class="title"><a href="">Software Development</a></h4>
+            <p class="description">We offer top-notch software development services to help businesses thrive in the digital age. 
+                                   Our team of skilled developers, engineers, and designers is passionate about creating robust, scalable, and innovative software solutions tailored to meet your specific needs.
+                                   With our extensive expertise in various technologies and programming languages, we excel in developing custom software applications, web platforms, mobile apps, and enterprise solutions. 
+                                   We leverage the latest industry trends and best practices to deliver high-quality software that aligns perfectly with your business objectives.</p>
           </div>
         </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Here is what our clients and partners have to say about our services. </p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Asante sana Mr. Emmanuel, You data services has helped alot in getting to understand our customer demographics and to tailor their needs accordingly.  
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-111.jpg" class="testimonial-img" alt="">
+                <h3>~Kym Bakari</h3>
+                <h4>Ceo &amp; Founder - Kym Investments.</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  So grateful Mr.Emmanuel for giving my Shoe Business an Online presence. Looking forward to more business with you.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-222.jpg" class="testimonial-img" alt="">
+                <h3>~Jane Kang'ara</h3>
+                <h4>Entrepreneur - J's Collection</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Emmanuel has been a true partner in our digital transformation journey. The expertise enables us to leverage cutting-edge technologies. Highly recommended!"
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-333.jpg" class="testimonial-img" alt="">
+                <h3>~Jena Kamau</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Kazi yenu imezidi matarajio yetu na mikakati ya IT iliyobinafsishwa. Majibu yenu haraka na mtazamo wenu wa kuzuia ni wa kuvutia. Wenza wa kuaminika wa IT!"
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-444.jpg" class="testimonial-img" alt="">
+                <h3>~Abdi Hamisi</h3>
+                <h4>Mfanyibiashara</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I am extremely satisfied with the services you provided .Your expertise and professionalism have been invaluable in improving our IT infrastructure.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-555.jpg" class="testimonial-img" alt="">
+                <h3>~John V.</h3>
+                <h4>Business Analyst</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Thank you for visiting ! If you're interested in learning more about the services we offer, we would love to hear from you.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Street 101, Waiyaki Way, Nairobi,Kenya</p>
+              </div>
+
+              <div class="email">
+                <i class="bx bxl-gmail"></i> 
+                <h4>Email:</h4>
+                <p><a href="mailto:emmanuelkiptoo047@gmail.com">emmanuelkiptoo047@gmail.com</a></p>
+              </div>
+
+              <div class="phone">
+                <i class="bx bxs-phone-call"></i>
+                <h4>Call:</h4>
+                <p>+254 703 683 812</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ntk2yp20I6S76e_4Jx7oQS0-0djDfOU&ehbc=2E312F" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
       </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer>
+  <footer id="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Emmanuel</strong>. All Rights Reserved</p>
-          
-          </div>
-        </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        Re-Designed by <a href="mailto:emmanuelkiptoo047@gmail.com">Emmanuel Kiptoo</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
 
-  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
