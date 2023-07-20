@@ -1,0 +1,274 @@
+body{
+    padding: 40px;
+    background-color: #65c4e7 !important;
+}
+
+.mainSection{
+    background-color: #A6dff3;
+    padding: 60px 20px;
+}
+
+.col-sm-3{
+    width: 19% !important;
+}
+
+.col-sm-4{
+    width: 25.3% !important;
+}
+
+.col-sm-2{
+    width: 12.3% !important;
+}
+
+
+.sectionOne{
+    margin-bottom: 10px;
+}
+
+select {
+    word-wrap: normal;
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    color: #212529;
+    width: 280px;
+}
+
+#clientClassificationLabel{
+    width: 40%;
+}
+
+#clientClassification{
+    width: 280px;
+}
+
+#clientName{
+    width: 99% !important;
+}
+
+#baseSearch{
+    width: 83% !important;
+}
+
+#clientIdSearch{
+    width: 80% !important;
+    height: 38px !important;
+}
+
+#applicationIdSearch{
+    width: 74% !important;
+    height: 38px !important;
+}
+
+.requiredField{
+    font-size: 15px !important;
+    font-weight: 700;
+    color: blue;
+}
+
+.normalField{
+    font-size: 15px !important;
+    font-weight: 700;
+    color: black;
+}
+
+.separator{
+    color: white;
+}
+
+.secondSection{
+    border: 0.8px solid #eeeeee;
+    border-radius: 4px;
+    padding: 20px 10px;
+}
+
+.tab {
+    display: none;
+  }
+
+.tabNav{
+    padding-top: 20px;
+}
+
+.tablist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .tablist li {
+    display: inline-block; /* Display the tabs inline */
+  }
+
+  .tablinks {
+    display: block;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border: solid 0.5px rgb(183, 183, 221);
+    border-radius: 4px;
+  }
+
+  .tablinks:hover {
+    background-color: #083b7e;
+    color: #ffffff;
+  }
+
+  .active {
+    background-color: #083b7e;
+    color: white;
+  }
+
+  .innerTitle{
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+
+  .normalFieldTwo{
+    font-size: 15px !important;
+    font-weight: 500;
+    color: black;
+}
+
+.requiredFieldTwo{
+    font-size: 15px !important;
+    font-weight: 500;
+    color: blue;
+}
+
+#openedBySearch{
+    width: 66%;
+    height: 38px;
+}
+
+.specialOffers{
+    padding: 20px 25px;
+}
+
+.checkLabel{
+    font-size: 15px !important;
+    font-weight: 500;
+    color: black;
+}
+
+.secondSection{
+    margin-bottom: 20px;
+}
+
+table{
+    height: 200px;
+    border: solid 0.6px #b4b4b4;
+    border-radius: 4px;
+}
+
+table thead{
+    background-color: #787777;
+    color: #ffffff;
+}
+
+table tbody{
+    background-color: #ffffff;
+}
+
+.identificationType, .lineOfBusiness{
+    width: 100%;
+}
+
+.normalFieldThree{
+    font-size: 14px !important;
+    font-weight: 500;
+    color: black;
+    width: 35% !important;
+}
+
+.title{
+    font-family: sans-serif;
+    color: #65c4e7;
+    text-align: center;
+}
+.tabContainer{
+    width: 100%;
+    height: 350px;
+}
+.tabContainer .buttonContainer{
+    height: 15%;
+}
+.tabContainer .buttonContainer button{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #eee;
+}
+.tabContainer .buttonContainer button:hover{
+    background-color: #d7d4d4;
+}
+.tabContainer .tabPanel{
+    height: 85%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding-top: 105px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 22px;
+    display: none;
+}
+
+.inputPlace{
+    padding: 2px 2px 2px 10px !important;
+}
+
+.bhscene{
+    width: 64.7% !important;
+}
+
+.sidebarSection{
+    background-color: #bfe4f1;
+    position: relative;
+}
+
+.navigation{
+    margin-top: 180px !important;
+    padding: 10px;
+    color: #083b7e;
+}
+
+.navRight{
+    float: right;
+}
+
+.actionBtns{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 80px;
+}
+
+.sidebarBtn{
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.activeBtn{
+    background-color: #083b7e;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+}
+
+.inactiveBtn{
+    color: #083b7e;
+    border-radius: 4px;
+    border: none;
+}

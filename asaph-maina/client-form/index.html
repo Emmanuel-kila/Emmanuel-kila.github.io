@@ -1,0 +1,566 @@
+<!-- Author: Kiptoo
+Date Created: 16/06/2023 -->
+
+
+<!Doctype html>
+<html>
+    <head>
+        <title>Client Form</title>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    </head>
+<body>
+
+<div class="row">
+    <!--main section-->
+    <div class="col-10 mainSection">
+        <!--header section-->
+        <form name="First_Client_Form">
+            <div class="row">
+                <div class="form-group row col-6">
+                    <label for="clientId" class="col-sm-3 col-form-label sectionOne requiredField">Client ID</label>
+                    <div class="input-group col-sm-9" id="clientIdSearch">
+                        <input type="text" id="clientId" class="form-control" placeholder="Client ID" required>
+                        <button class="input-group-text" id="basic-addon2">Search</button>
+                    </div>
+                </div>
+                <div class="form-group row col-6">
+                    <div class="row sectionOne">
+                        <label  class="col-sm-5 col-form-label requiredField">Client Type</label>
+                        <div class="col-sm-7">
+                            <select class="clientType custom-select" required>
+                                <option>Enterprises</option>
+                                <option>Demo 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row sectionOne">
+                        <label  class="col-sm-5 col-form-label requiredField">Segment Type</label>
+                        <div class="col-sm-7">
+                            <select class="clientType" required>
+                                <option>Corporate</option>
+                                <option>Demo 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row sectionOne">
+                        <label  class="col-sm-5 col-form-label requiredField">Sub-Segment Type</label>
+                        <div class="col-sm-7">
+                            <select class="clientType" required>
+                                <option>Public Limited Company</option>
+                                <option>Demo 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row col-6">
+                    <label for="appId" class="col-sm-4 col-form-label sectionOne normalField">Application ID</label>
+
+                    <div class="input-group col-sm-8" id="applicationIdSearch">
+                        <input type="text" id="appId" class="form-control" placeholder="Application ID">
+                        <button class="input-group-text" id="basic-addon2">Search</button>
+                    </div>
+                </div>
+                <div class="form-group row col-6 sectionOne">
+                    <label for="clientClassification" id="clientClassificationLabel" class="col-sm-5 col-form-label sectionOne requiredField">Client Classification</label>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control" id="clientClassification" placeholder="Client Classification">
+                    </div>   
+                </div>
+                <div class="form-group row col-12 sectionOne">
+                    <label for="clientName" class="col-sm-2 col-form-label sectionOne requiredField">Client Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="clientName" placeholder="Client Name" required>
+                    </div>   
+                </div>
+                <div class="form-group row col-12 sectionOne">
+                    <label for="baseId" class="col-sm-2 col-form-label sectionOne normalField">Base ID</label>
+                    <div class="input-group col-sm-10" id="baseSearch">
+                        <input type="text" id="baseId" class="form-control" placeholder="Base ID">
+                        <button class="input-group-text" id="basic-addon2">Search</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+         
+        <!-- Thematic break -->
+        
+        <hr class="separator">
+
+        <!--second section-->
+        <div class="row secondSection">
+            <ul class="tablist">
+                <li><button class="tablinks" onclick="openTab(event, 'tab1')">Corporate</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'tab2')">Address</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'tab3')">Special Offers</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'tab4')">Director's Details</button></li>
+             </ul>
+    
+              <!--corporate tab-->
+              <div id="tab1" class="tab">
+                <h2 class="innerTitle">Corporate Details</h2>
+                <form>
+                    <div class="form-group row col-12 sectionOne">
+                        <label for="companyName" class="col-sm-2 col-form-label requiredFieldTwo">Company Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="companyName" placeholder="Company Name" required>
+                        </div>   
+                    </div>
+                    <div class="row sectionOne col-12">
+                        <label  class="col-sm-2 col-form-label requiredFieldTwo">Line of Business</label>
+                        <div class="col-sm-10">
+                            <select class="clientType custom-select lineOfBusiness" required >
+                                <option>Proprietary</option>
+                                <option>Demo 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row col-12 sectionOne">
+                        <label for="businessInfo" class="col-sm-2 col-form-label sectionOne normalFieldTwo">Line of Business More Info</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="businessInfo" placeholder="Line of Business More Info">
+                        </div>   
+                    </div>
+
+                    <div class="form-group row col-12 sectionOne">
+                        <label for="NatureBusinessID" class="col-sm-2 col-form-label requiredFieldTwo">Nature of Business</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="NatureBusinessID" placeholder="Nature of Business" required>
+                        </div>   
+                    </div>
+
+                    <div class="row sectionOne col-12">
+                        <label for="identificationType" class="col-sm-2 col-form-label requiredFieldTwo">Identification Type</label>
+                        <div class="col-sm-10">
+                            <select class="identificationType custom-select" required>
+                                <option>--select--</option>
+                                <option>Demo 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="registrationNo" class="col-sm-4 col-form-label requiredFieldTwo">Registration No</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="registrationNo" placeholder="Registration No" required>
+                            </div> 
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="doReg" class="col-sm-4 col-form-label normalFieldTwo">Date of Registration</label>
+                            <div class="col-sm-8">
+                                <input type="date" class="form-control" id="businessInfo" placeholder="Line of Business More Info">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="registeredAt" class="col-sm-4 col-form-label normalFieldTwo">Registered At</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="registeredAt" placeholder="Registered At">
+                            </div> 
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="registeredOffice" class="col-sm-4 col-form-label normalFieldTwo">Registered Office</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="registeredOffice" placeholder="Registered Office">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="startedYear" class="col-sm-4 col-form-label normalFieldTwo">Business Started Year</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="startedYear" placeholder="Business Started Year">
+                            </div> 
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="employees" class="col-sm-4 col-form-label normalFieldTwo">No Of Employees</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="employees" placeholder="No Of Employees">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="form-group row col-12 sectionOne">
+                        <label for="comments" class="col-sm-2 col-form-label sectionOne normalFieldTwo">Comments</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="comments" placeholder="Comments">
+                        </div>   
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="website" class="col-sm-4 col-form-label normalFieldTwo">Website</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="website" placeholder="Website">
+                            </div> 
+                        </div>
+                        <div class="form-group row col-6">
+                            <label for="openedBy" class="col-sm-4 col-form-label sectionOne normalFieldTwo">Opened By</label>
+        
+                            <div class="input-group col-sm-8" id="openedBySearch">
+                                <input type="text" id="openedBy" class="form-control" placeholder="Opened By">
+                                <button class="input-group-text" id="basic-addon2">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="relationshipManager" class="col-sm-4 col-form-label requiredFieldTwo">RelationShip Manager</label>
+                            <div class="col-sm-8">
+                                <select class="custom-select w-100" required>
+                                    <option>--select--</option>
+                                    <option>Demo 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="openedOn" class="col-sm-4 col-form-label requiredFieldTwo">Opened On</label>
+                            <div class="col-sm-8">
+                                <select class="custom-select w-100" required>
+                                    <option>--select--</option>
+                                    <option>Demo 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row col-12 sectionOne">
+                        <label for="tinNo" class="col-sm-2 col-form-label sectionOne normalFieldTwo">TIN Number</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="tinNo" placeholder="TIN Number">
+                        </div>   
+                    </div>
+                </form>
+              </div>
+              <!--end of corporate tab-->
+          
+              <!--mailing address tab-->
+              <div id="tab2" class="tab">
+                <h2 class="innerTitle">Mailing Address</h2>
+                <form>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="residentialAddress" class="col-sm-4 col-form-label requiredFieldTwo">Residential Address</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="residentialAddress" placeholder="Residential Address" required>
+                            </div> 
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="businessAddress" class="col-sm-4 col-form-label normalFieldTwo">Business Address</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="businessAddress" placeholder="Business Address">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="officeAddress" class="col-sm-4 col-form-label normalFieldTwo">Office Address</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="officeAddress" placeholder="Office Address">
+                            </div> 
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="mailingAddress" class="col-sm-4 col-form-label requiredFieldTwo">Mailing Address</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="mailingAddress" placeholder="Business Address" required>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="homeAddress" class="col-sm-4 col-form-label normalFieldTwo">Home Country Address</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="homeAddress" placeholder="Home Country Address">
+                            </div> 
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="addressTwo" class="col-sm-4 col-form-label normalFieldTwo">Address 2</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="addressTwo" placeholder="Address 2">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="region" class="col-sm-4 col-form-label normalFieldTwo">Region</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="region" placeholder="Region">
+                            </div> 
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="street" class="col-sm-4 col-form-label normalFieldTwo">Street</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="street" placeholder="Street">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="country" class="col-sm-4 col-form-label requiredFieldTwo">Country</label>
+                            <div class="col-sm-8">
+                                <select class="custom-select w-100" required>
+                                    <option>Tanzania</option>
+                                    <option>Demo 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="zipCode" class="col-sm-4 col-form-label normalFieldTwo">Zip Code</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="zipCode" placeholder="Zip Code">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="regionTwo" class="col-sm-4 col-form-label requiredFieldTwo">Region</label>
+                            <div class="col-sm-8">
+                                <select class="custom-select w-100" required>
+                                    <option>Arusha</option>
+                                    <option>Demo 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="phoneHome" class="col-sm-4 col-form-label normalFieldTwo">Phone (Home)</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="phoneHome" placeholder="Phone (Home)">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="ward" class="col-sm-4 col-form-label requiredFieldTwo">Ward</label>
+                            <div class="col-sm-8">
+                                <select class="custom-select w-100" required>
+                                    <option>BOMAMBUZI</option>
+                                    <option>Demo 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="district" class="col-sm-4 col-form-label requiredFieldTwo">District</label>
+                            <div class="col-sm-8">
+                                <select class="custom-select w-100" required>
+                                    <option>HAI</option>
+                                    <option>Demo 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="phoneWork" class="col-sm-4 col-form-label normalFieldTwo">Phone (Work)</label>
+                            <div class="col-sm-8">
+                                <input type="tel" class="form-control" id="phoneWork" placeholder="Phone (Work)">
+                            </div> 
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="mobile" class="col-sm-4 col-form-label requiredFieldTwo">Mobile</label>
+                            <div class="col-sm-8">
+                                <input type="tel" class="form-control" id="mobile" placeholder="Mobile" required>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="faxNumber" class="col-sm-4 col-form-label normalFieldTwo">Fax No</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="faxNumber" placeholder="Fax No">
+                            </div> 
+                        </div>
+                        <div class="row sectionOne col-6">
+                            <label for="emailId" class="col-sm-4 col-form-label normalFieldTwo">Email ID</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="emailId" placeholder="Email ID">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row sectionOne col-6">
+                            <label for="landMark" class="col-sm-4 col-form-label normalFieldTwo">Land Mark</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="landMark" placeholder="Land Mark">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+              </div>
+              <!--end of mailing address tab-->
+              
+              <!--special offers tab-->
+              <div id="tab3" class="tab">
+                <h2 class="innerTitle">Special Offers</h2>
+                <form>
+                    <div class="row specialOffers">
+                        <div class="custom-control custom-checkbox col-4">
+                            <input type="checkbox" class="custom-control-input" id="checkOne">
+                            <label class="custom-control-label checkLabel" for="checkOne">Can Send Greetings</label>
+                          </div>
+                          <div class="custom-control custom-checkbox col-4">
+                            <input type="checkbox" class="custom-control-input" id="checkTwo">
+                            <label class="custom-control-label checkLabel" for="checkTwo">Can Send Associate Special Offer</label>
+                          </div>
+                          <div class="custom-control custom-checkbox col-4">
+                            <input type="checkbox" class="custom-control-input" id="checkThree">
+                            <label class="custom-control-label checkLabel" for="checkThree">Can Send Our Special Offers</label>
+                          </div>
+                          <div class="custom-control custom-checkbox col-4">
+                            <input type="checkbox" class="custom-control-input" id="checkFour">
+                            <label class="custom-control-label checkLabel" for="checkFour">Statement Online</label>
+                          </div>
+                          <div class="custom-control custom-checkbox col-4">
+                            <input type="checkbox" class="custom-control-input" id="checkFive">
+                            <label class="custom-control-label checkLabel" for="checkFive">Mobile Alert</label>
+                          </div>
+                    </div>
+                </form>
+              </div>
+              <!--end of special offers tab-->
+
+              <!--personal details tab-->
+              <div id="tab4" class="tab">
+                <h2 class="innerTitle">Personal Details</h2>
+                <form>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="tableTitle">Client Name</th>
+                            <th scope="col" class="tableTitle">Relation</th>
+                            <th scope="col" class="tableTitle">Share (%)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                                <p>No records to display</p>
+                            </td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </form>
+              </div>
+        </div>
+        <!--end of personal details-->
+
+        <!--behind the scene-->
+        <div class="row">
+            <h2 class="innerTitle">Behind the Scene</h2> 
+            <form>
+                <div class="row">
+                 <div class="row sectionOne col-4">
+                        <label for="status" class="col-sm-3 col-form-label normalFieldThree">Status</label>
+                        <div class="col-sm-9 bhscene">
+                            <input type="text" class="form-control inputPlace" id="status" placeholder="Status">
+                        </div> 
+                   </div>
+                   <div class="row sectionOne col-4">
+                        <label for="openedDate" class="col-sm-3 col-form-label normalFieldThree">Opened Date</label>
+                        <div class="col-sm-9 bhscene">
+                            <input type="date" class="form-control inputPlace" id="openedDate" placeholder="Opened Date">
+                        </div> 
+                    </div>
+                    <div class="row sectionOne col-4">
+                        <label for="ClosedDate" class="col-sm-3 col-form-label normalFieldThree">Closed Date</label>
+                        <div class="col-sm-9 bhscene">
+                            <input type="date" class="form-control inputPlace" id="ClosedDate" placeholder="Closed Date">
+                        </div> 
+                    </div>
+
+                    <div class="row sectionOne col-4">
+                        <label for="createdBy" class="col-sm-3 col-form-label normalFieldThree">Created By</label>
+                        <div class="col-sm-9 bhscene">
+                            <input type="text" class="form-control inputPlace" id="createdBy" placeholder="Created By">
+                        </div> 
+                    </div>
+                    <div class="row sectionOne col-4">
+                        <label for="modifiedBy" class="col-sm-3 col-form-label normalFieldThree">Modified By</label>
+                        <div class="col-sm-9 bhscene">
+                            <input type="text" class="form-control inputPlace" id="modifiedBy" placeholder="Modified By">
+                        </div> 
+                    </div>
+                    <div class="row sectionOne col-4">
+                        <label for="supervisedBy" class="col-sm-3 col-form-label normalFieldThree">Supervised By</label>
+                        <div class="col-sm-9 bhscene">
+                            <input type="text" class="form-control inputPlace" id="supervisedBy" placeholder="Supervised By">
+                        </div> 
+                    </div>
+                    <div class="row sectionOne col-4">
+                        <label for="createdOn" class="col-sm-3 col-form-label normalFieldThree">Created On</label>
+                        <div class="col-sm-9 bhscene">
+                            <input type="date" class="form-control inputPlace" id="createdOn" placeholder="Created On">
+                        </div> 
+                    </div>
+                    <div class="row sectionOne col-4">
+                        <label for="modifiedOn" class="col-sm-3 col-form-label normalFieldThree">Modified On</label>
+                        <div class="col-sm-9 bhscene">
+                            <input type="date" class="form-control inputPlace" id="modifiedOn" placeholder="Modified On">
+                        </div> 
+                    </div>
+                    <div class="row sectionOne col-4">
+                        <label for="supervisedOn" class="col-sm-4 col-form-label normalFieldThree">Supervised On</label>
+                        <div class="col-sm-8 bhscene">
+                            <input type="date" class="form-control inputPlace" id="supervisedOn" placeholder="Supervised On">
+                        </div> 
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--end of behind the scene-->
+
+    </div>
+    <!--sidebar section-->
+    <div class="col-2 sidebarSection">
+        <div class="row navigation">
+            <p class="col-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg>
+            </p>
+            <p class="col-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right-circle navRight" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                </svg>
+            </p>
+        </div>
+        <div class="actionBtns">
+            <button class="sidebarBtn activeBtn">View</button>
+            <button class="sidebarBtn activeBtn">Add</button>
+            <button class="sidebarBtn inactiveBtn" disabled>Edit</button>
+            <button class="sidebarBtn inactiveBtn" disabled>Close</button>
+            <button class="sidebarBtn inactiveBtn" disabled>Save</button>
+            <button class="sidebarBtn activeBtn">Cancel</button>
+        </div>
+    </div>
+ </div>
+
+<script src="myScript.js"></script>  
+<script src="validation.js"></script> <!--This is a javascript validation form still under development -->  
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
