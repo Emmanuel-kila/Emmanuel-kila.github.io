@@ -485,6 +485,19 @@ section {
   position: relative;
 }
 
+.resumedownload {
+  background: #149ddd;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.resumedownload a{
+  color: #fff !important;
+}
+
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
@@ -949,6 +962,10 @@ section {
 
 .contact .php-email-form .error-message br+br {
   margin-top: 25px;
+}
+
+.ahreftextcolor{
+  color: white !important;
 }
 
 .contact .php-email-form .sent-message {

@@ -254,3 +254,27 @@
   new PureCounter();
 
 })()
+
+//This section is still under testing, wanted to have download date appended to the file name
+
+// Get the current date in the format: DD-MM-YYYY
+function getCurrentDate() {
+  const now = new Date();
+  const day = String(now.getDate()).padStart(2, '0');
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const year = now.getFullYear();
+  return `${day}-${month}-${year}`;
+}
+
+// Set the download link with the custom file name including the current date
+function setDownloadFileName() {
+  const downloadLink = document.getElementById('downloadLink');
+  const originalHref = downloadLink.getAttribute('href');
+  const currentDate = getCurrentDate();
+  const fileName = `resume_emmanuel_${currentDate}.pdf`;
+  downloadLink.setAttribute('href', originalHref);
+  downloadLink.setAttribute('download', fileName);
+}
+
+// Call the function to set the download link when the page loads
+document.addEventListener('DOMContentLoaded', setDownloadFileName);
